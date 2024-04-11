@@ -1,5 +1,12 @@
 <template>
-    <div class="bg-white">
+  <header />
+<div class="container">
+  <Balance />
+  <IncomeExpense />
+  <TransactionList />
+  <AddTransaction />
+</div>
+  <!-- <div class="bg-white">
       <div class="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
         <h2 class="text-2xl font-bold tracking-tight text-gray-900">Customers also purchased</h2>
   
@@ -23,20 +30,35 @@
           </div>
         </div>
       </div>
-    </div>
-  </template>
-  
-  <script setup>
-  const products = [
-    {
-      id: 1,
-      name: 'Basic Tee',
-      href: '#',
-      imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
-      imageAlt: "Front of men's Basic Tee in black.",
-      price: '$35',
-      color: 'Black',
-    },
-    // More products...
-  ]
-  </script>
+    </div> -->
+</template>
+
+<script >
+import Header from "@/components/Header.vue";
+import Balance from "@/components/Balance.vue";
+import IncomeExpense from "@/components/IncomeExpense.vue";
+import TransactionList from "@/components/TransactionList.vue";
+import AddTransaction from "@/components/AddTransaction.vue";
+
+export default {
+  components: {
+    Header,
+    Balance,
+    IncomeExpense,
+    TransactionList,
+    AddTransaction,
+  },
+};
+// const products = [
+//   {
+//     id: 1,
+//     name: 'Basic Tee',
+//     href: '#',
+//     imageSrc: 'https://tailwindui.com/img/ecommerce-images/product-page-01-related-product-01.jpg',
+//     imageAlt: "Front of men's Basic Tee in black.",
+//     price: '$35',
+//     color: 'Black',
+//   },
+//   // More products...
+// ]
+</script>
